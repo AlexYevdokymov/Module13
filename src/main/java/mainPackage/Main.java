@@ -1,14 +1,13 @@
 package mainPackage;
 
 
-import dto.Address;
-import dto.Company;
-import dto.Geo;
-import dto.User;
+import dto.*;
+import tasks.Task1;
+import tasks.Task2;
 
 import java.io.IOException;
 
-import static tasks.Task1.*;
+
 
 public class Main {
 
@@ -19,12 +18,14 @@ public class Main {
                         new Geo("50.449834","30.523032")),"+380-12-34-56-789", "alex-cold.com",
                 new Company("Alex inc.","citius altius fotius","aggregate real-time technologies"));
 
-        System.out.println(postUser(user));
-        System.out.println(putUser(user, 8));
-        System.out.println(deleteUser(4));
-        System.out.println(getAllUsers());
-        System.out.println(getUserById(3));
-        System.out.println(getUsersByUsername("Delphine"));
+        System.out.println(Task1.postUser(user));
+        System.out.println(Task1.putUser(user, 8));
+        System.out.println(Task1.deleteUser(4));
+        System.out.println(Task1.getAllUsers());
+        System.out.println(Task1.getUserById(3));
+        System.out.println(Task1.getUsersByUsername("Delphine"));
+
+        Task2.writeComments(6);
 
     }
 
