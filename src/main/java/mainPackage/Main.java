@@ -4,6 +4,7 @@ package mainPackage;
 import dto.*;
 import tasks.Task1;
 import tasks.Task2;
+import tasks.Task3;
 
 import java.io.IOException;
 
@@ -27,6 +28,7 @@ public class Main {
 
         Task2.writeComments(6);
 
+        System.out.println(Task3.getNotFinishedTasks(7));
     }
 
 }
